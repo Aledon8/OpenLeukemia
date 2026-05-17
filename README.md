@@ -1,5 +1,7 @@
 # OpenLeukemia
 
+[![CI](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml)
+
 OpenLeukemia is a patient-centered platform for organizing leukemia-related medical data, tracking changes over time, and turning complex results into understandable explanations without replacing a physician.
 
 The project is guided by the principles in [PROJECT_CHARTER.md](./PROJECT_CHARTER.md) and the system design in [ARCHITECTURE.md](./ARCHITECTURE.md).
