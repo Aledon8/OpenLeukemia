@@ -1,6 +1,7 @@
 # OpenLeukemia
 
 [![CI](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml)
+[![Deploy Pages](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml)
 
 OpenLeukemia is a patient-centered platform for organizing leukemia-related medical data, tracking changes over time, and turning complex results into understandable explanations without replacing a physician.
 
@@ -146,6 +147,8 @@ npm --workspace frontend run build
 ```
 
 GitHub Actions runs frontend checks and AI-service checks on pushes to `main` and on pull requests.
+
+GitHub Pages deployment is handled by `.github/workflows/pages.yml` and publishes the built frontend from `frontend/dist`.
 
 ## Coding Conventions
 
