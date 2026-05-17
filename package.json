@@ -1,0 +1,13 @@
+{
+  "name": "openleukemia",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "lint:frontend": "npm --workspace frontend run lint",
+    "typecheck:frontend": "npm --workspace frontend run typecheck",
+    "test:frontend": "npm --workspace frontend run test"
+  }
+}

@@ -156,6 +156,12 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+backend/.tmp/
+backend/pytest-cache-files-*/
+backend/*.egg-info/
+ai-service/.tmp/
+ai-service/pytest-cache-files-*/
+ai-service/*.egg-info/
 
 # Spyder project settings
 .spyderproject
@@ -216,3 +222,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+coverage/
