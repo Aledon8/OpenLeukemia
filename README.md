@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml)
 [![Deploy Pages](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml)
+[![Reddit](https://www.reddit.com/r/OpenLeukemia/)]
+[![Instagram](https://www.instagram.com/openleukemia/?utm_source=ig_web_button_share_sheet)]
 
 OpenLeukemia is a patient-centered platform for organizing leukemia-related medical data, tracking changes over time, and turning complex results into understandable explanations without replacing a physician.
 
