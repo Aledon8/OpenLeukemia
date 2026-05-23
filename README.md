@@ -1,16 +1,16 @@
-# OpenLeukemia
+# OpenLeukemia 
 
 [![CI](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml)
-[![Deploy Pages](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml)
-<p align="center">
-  <a href="https://reddit.com/r/OpenLeukemia">
-    <img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white">
-  </a>
 
-  <a href="https://www.instagram.com/openleukemia/">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
-  </a>
-</p>
+[![Deploy Pages](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml)
+
+[![Reddit](https://img.shields.io/badge/Reddit-OpenLeukemia-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://reddit.com/r/OpenLeukemia)
+
+[![Instagram](https://img.shields.io/badge/Instagram-@openleukemia-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/openleukemia/)
+
+[![Community](https://img.shields.io/badge/Community-Discussions-blue?style=for-the-badge&logo=github)](https://github.com/Aledon8/OpenLeukemia/discussions)
+
+[![License](https://img.shields.io/badge/License-AGPLv3-red?style=for-the-badge)](https://www.gnu.org/licenses/agpl-3.0)
 
 OpenLeukemia is a patient-centered platform for organizing leukemia-related medical data, tracking changes over time, and turning complex results into understandable explanations without replacing a physician.
 
