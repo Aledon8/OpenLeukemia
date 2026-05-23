@@ -1,0 +1,14 @@
+---
+description: Frontend rules for OpenLeukemia React code
+globs:
+  - "frontend/**/*.{ts,tsx,css,html,json}"
+alwaysApply: false
+---
+
+# Frontend Rules
+
+- Keep React components typed, feature-oriented, and consistent with `frontend/src/features`.
+- Preserve mobile-first responsive behavior, light/dark themes, accessible controls, and existing CSS variables.
+- Keep patient-facing copy calm, plain, and non-diagnostic.
+- Consider empty, loading, error, and edge states before implementation.
+- Update or add Vitest coverage when behavior changes.
