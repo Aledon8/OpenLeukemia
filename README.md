@@ -1,5 +1,5 @@
 # OpenLeukemia 
-
+Just wanna say one thing. Thankyou for becoming the first user of OpenRabbit :) This is a stale PR ofcource. If its not working or you need help in setup or if you have any reccomendation let me know I will fix that. 
 [![CI](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/ci.yml)
 
 [![Deploy Pages](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml/badge.svg)](https://github.com/Aledon8/OpenLeukemia/actions/workflows/pages.yml)
