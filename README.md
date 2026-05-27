@@ -11,7 +11,7 @@
 [![Community](https://img.shields.io/badge/Community-Discussions-blue?style=for-the-badge&logo=github)](https://github.com/Aledon8/OpenLeukemia/discussions)
 
 [![License](https://img.shields.io/badge/License-AGPLv3-red?style=for-the-badge)](https://www.gnu.org/licenses/agpl-3.0)
-
+...
 OpenLeukemia is a patient-centered platform for organizing leukemia-related medical data, tracking changes over time, and turning complex results into understandable explanations without replacing a physician.
 
 The project is guided by the principles in [PROJECT_CHARTER.md](./PROJECT_CHARTER.md) and the system design in [ARCHITECTURE.md](./ARCHITECTURE.md).
