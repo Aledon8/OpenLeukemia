@@ -248,3 +248,28 @@ The project is in early implementation. The repository already contains:
 - [ARCHITECTURE.md](./ARCHITECTURE.md)
 - [ai-service/README.md](./ai-service/README.md)
 - [supabase/functions/README.md](./supabase/functions/README.md)
+
+
+## Acknowledgements
+
+This project would not be possible without these amazing open-source projects and services:
+
+- [Docusaurus](https://docusaurus.io/) — documentation platform powering project docs
+- [OpenRouter](https://openrouter.ai/) — unified API access to multiple LLM providers
+- [Supabase](https://supabase.com/) — backend, database and edge functions
+- [GitHub Actions](https://github.com/features/actions) — workflow automation
+- [OpenRabbit](https://github.com/aryan6673/openrabbit) — AI-powered PR review inspiration
+- [TypeScript](https://www.typescriptlang.org/) — type-safe development
+- [Node.js](https://nodejs.org/) — runtime environment
+
+Special thanks to the maintainers and communities behind these projects.
+
+## Contributors
+
+Thanks to everyone who contributed to this project.
+
+<a href="https://github.com/Aledon8/OpenLeukemia/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Aledon8/OpenLeukemia" />
+</a>
+
+Contributions, ideas and feedback are always welcome.
