@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 import { DashboardPage } from "../features/dashboard/DashboardPage";
-import { DocumentationPage } from "../features/documentation/DocumentationPage";
 import { LandingPage } from "../features/landing/LandingPage";
 
 type Theme = "light" | "dark";
@@ -23,7 +22,6 @@ function getInitialTheme(): Theme {
 export function App() {
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const isDashboardRoute = window.location.pathname === "/app";
-  const isDocumentationRoute = window.location.pathname === "/docs";
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -36,10 +34,6 @@ export function App() {
 
   if (isDashboardRoute) {
     return <DashboardPage />;
-  }
-
-  if (isDocumentationRoute) {
-    return <DocumentationPage onThemeToggle={toggleTheme} theme={theme} />;
   }
 
   return <LandingPage onThemeToggle={toggleTheme} theme={theme} />;

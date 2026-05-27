@@ -57,3 +57,6 @@ jobs:
 
       - name: Run frontend tests
         run: npm test --workspace frontend
+
+      - name: Build documentation
+        run: npm run build:docs

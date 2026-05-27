@@ -3,9 +3,16 @@
   "private": true,
   "version": "0.1.0",
   "workspaces": [
-    "frontend"
+    "frontend",
+    "docs-site"
   ],
   "scripts": {
+    "build:docs": "npm --workspace docs-site run build",
+    "build:frontend:pages": "npm --workspace frontend run build -- --mode github-pages",
+    "build:pages": "npm run build:frontend:pages && npm run build:docs && node scripts/copy-docs-build.mjs",
+    "dev": "node scripts/dev-all.mjs",
+    "dev:docs": "npm --workspace docs-site run start -- --host 127.0.0.1 --port 3000",
+    "dev:frontend": "npm --workspace frontend run dev -- --host 127.0.0.1 --port 5173",
     "lint:frontend": "npm --workspace frontend run lint",
     "typecheck:frontend": "npm --workspace frontend run typecheck",
     "test:frontend": "npm --workspace frontend run test"

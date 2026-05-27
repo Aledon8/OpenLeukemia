@@ -54,6 +54,7 @@ ai-service/     Python service for ML and extraction workloads
 supabase/       migrations, policies, and Edge Functions
 ml/             machine learning workspace
 docs/           project documentation
+docs-site/      Docusaurus documentation site
 ```
 
 ## Product Rules
@@ -127,8 +128,32 @@ http://127.0.0.1:5173
 Useful pages:
 
 - `/` landing page
-- `/docs` project documentation page
+- `/docs` Docusaurus documentation site
 - `/app` early patient dashboard
+
+### 5. Run the frontend and documentation together
+
+For local development, run both the Vite frontend and Docusaurus documentation site:
+
+```powershell
+npm run dev
+```
+
+The landing page runs at `http://127.0.0.1:5173`, and the `/docs` link is proxied to the Docusaurus server.
+
+### 6. Run only the documentation site
+
+From the repository root:
+
+```powershell
+npm run dev:docs
+```
+
+Default local documentation URL:
+
+```text
+http://localhost:3000/docs/
+```
 
 ## Development Workflow
 
@@ -155,9 +180,21 @@ cd ai-service
 npm --workspace frontend run build
 ```
 
-GitHub Actions runs frontend checks and AI-service checks on pushes to `main` and on pull requests.
+Build the Docusaurus documentation site:
 
-GitHub Pages deployment is handled by `.github/workflows/pages.yml` and publishes the built frontend from `frontend/dist`.
+```powershell
+npm run build:docs
+```
+
+Build the GitHub Pages artifact with the frontend at `/` and documentation at `/docs/`:
+
+```powershell
+npm run build:pages
+```
+
+GitHub Actions runs frontend checks, documentation build, and AI-service checks on pushes to `main` and on pull requests.
+
+GitHub Pages deployment is handled by `.github/workflows/pages.yml` and publishes `frontend/dist` after Docusaurus has been staged into `frontend/dist/docs`.
 
 ## Coding Conventions
 

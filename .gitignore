@@ -225,6 +225,8 @@ __marimo__/
 
 # Node / frontend
 node_modules/
+docs-site/.docusaurus/
+docs-site/build/
 frontend/dist/
 frontend/*.tsbuildinfo
 coverage/
