@@ -11,6 +11,7 @@ permissions:
 jobs:
   review:
     runs-on: ubuntu-latest
+    environment: secrets
     steps:
       - name: OpenRabbit
         uses: aryan6673/openrabbit@main
