@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import logoMark from "../../assets/openleukemia-mark.png";
+const logoMark = "/apple-touch-icon.png";
 
 type LandingPageProps = {
   theme: "light" | "dark";
@@ -174,29 +174,6 @@ export function LandingPage({ theme, onThemeToggle }: LandingPageProps) {
               <p>{step.description}</p>
             </article>
           ))}
-        </section>
-
-        <section className="auth-section" aria-label="Account actions">
-          <article>
-            <p className="section-kicker">Get started</p>
-            <h2>Create an account</h2>
-            <p>
-              Start with a private profile and choose each consent separately. Registration never
-              means giving away everything.
-            </p>
-            <button className="primary-action" onClick={() => openModal("signup")} type="button">
-              Sign up
-            </button>
-          </article>
-
-          <article>
-            <p className="section-kicker">Returning patient</p>
-            <h2>Log in</h2>
-            <p>Access your timeline, documents, and explanations from one secure workspace.</p>
-            <button className="secondary-action" onClick={() => openModal("login")} type="button">
-              Log in
-            </button>
-          </article>
         </section>
 
         <footer className="site-footer">

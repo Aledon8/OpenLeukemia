@@ -1,3 +1,5 @@
 # Project documentation
 
-Architecture, product, and data design documents should live here as the project grows.
+Durable project documents can live here as the project grows.
+
+The public documentation site is powered by Docusaurus in `docs-site/` and is deployed under `/docs/` on GitHub Pages.

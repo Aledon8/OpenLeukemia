@@ -232,51 +232,50 @@ h3 {
 }
 
 .signal-orbit {
-  position: relative;
-  display: grid;
-  width: min(470px, 100%);
-  aspect-ratio: 1;
-  place-items: center;
-}
+  --orbit-size: clamp(258px, 42vw, 470px);
 
-.signal-orbit::before {
-  position: absolute;
-  width: 62%;
-  height: 62%;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 65% 35%, rgba(255, 255, 255, 0.22), transparent 28%),
-    radial-gradient(circle, rgba(196, 20, 47, 0.22), transparent 68%);
-  content: "";
-  filter: blur(1px);
+  position: relative;
+  width: min(var(--orbit-size), 100%);
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
 }
 
 .orbit {
   position: absolute;
+  left: 50%;
+  top: 50%;
+  aspect-ratio: 1 / 1;
   border: 1px solid color-mix(in srgb, var(--accent) 52%, transparent);
   border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .orbit-one {
-  inset: 9%;
+  width: 82%;
 }
 
 .orbit-two {
-  inset: 21%;
+  width: 58%;
 }
 
 .orbit-three {
-  inset: 33%;
+  width: 34%;
 }
 
 .signal-core {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
   display: grid;
-  width: 150px;
-  height: 150px;
+  width: clamp(118px, 13vw, 150px);
+  aspect-ratio: 1 / 1;
   place-content: center;
   gap: 4px;
+
+  transform: translate(-50%, -50%);
+
   border: 1px solid color-mix(in srgb, var(--accent) 38%, transparent);
   border-radius: 50%;
   background:
@@ -287,42 +286,39 @@ h3 {
   text-align: center;
 }
 
-.signal-core strong {
-  font-size: 28px;
-}
-
-.signal-core small {
-  color: rgba(255, 247, 248, 0.82);
-  font-size: 13px;
-}
-
 .signal-chip {
   position: absolute;
-  z-index: 2;
-  min-width: 120px;
+  z-index: 3;
+
+  min-width: clamp(88px, 11vw, 120px);
+  padding: clamp(7px, 1vw, 10px) clamp(10px, 1.4vw, 14px);
+
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--surface);
-  padding: 10px 14px;
   color: var(--text-primary);
   box-shadow: 0 16px 34px rgba(36, 24, 27, 0.08);
-  font-size: 14px;
+
+  font-size: clamp(12px, 1.4vw, 14px);
   white-space: nowrap;
 }
 
 .chip-platelets {
-  top: 13%;
-  right: 2%;
+  left: 50%;
+  top: 8%;
+  transform: translateX(45%);
 }
 
 .chip-crp {
-  bottom: 16%;
-  left: 0;
+  left: 50%;
+  top: 68%;
+  transform: translateX(-110%);
 }
 
 .chip-temp {
-  right: 8%;
-  bottom: 9%;
+  left: 50%;
+  top: 78%;
+  transform: translateX(25%);
 }
 
 .highlight-strip {
@@ -762,10 +758,6 @@ h3 {
     width: 100%;
   }
 
-  .signal-orbit {
-    width: min(430px, 100%);
-  }
-
   .content-section {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -784,6 +776,27 @@ h3 {
 }
 
 @media (max-width: 620px) {
+  .hero-art {
+    display: flex;
+    flex: 0 1 258px;
+    justify-content: center;
+  }
+
+  .chip-platelets {
+    top: 25%;
+    transform: translateX(28%);
+  }
+
+  .chip-crp {
+    top: 65%;
+    transform: translateX(-95%);
+  }
+
+  .chip-temp {
+    top: 70%;
+    transform: translateX(18%);
+  }
+
   .landing-page,
   .dashboard-page {
     width: min(100% - 24px, 1200px);
@@ -876,16 +889,12 @@ h3 {
 
   .hero-actions {
     width: 100%;
+    display: none;
   }
 
   .hero-actions .primary-action,
   .hero-actions .secondary-action {
     flex: 1 1 100%;
-  }
-
-  .signal-orbit {
-    width: min(290px, 100%);
-    margin-inline: auto;
   }
 
   .signal-core {
@@ -895,27 +904,6 @@ h3 {
 
   .signal-core strong {
     font-size: 22px;
-  }
-
-  .signal-chip {
-    min-width: auto;
-    padding: 7px 10px;
-    font-size: 11px;
-  }
-
-  .chip-platelets {
-    top: 7%;
-    right: 2%;
-  }
-
-  .chip-crp {
-    bottom: 12%;
-    left: 2%;
-  }
-
-  .chip-temp {
-    right: 6%;
-    bottom: 3%;
   }
 
   .highlight-strip {
@@ -1033,23 +1021,5 @@ h3 {
   .metric-list li {
     grid-template-columns: 1fr;
     gap: 4px;
-  }
-}
-
-@media (max-width: 380px) {
-  .signal-orbit {
-    width: min(258px, 100%);
-  }
-
-  .signal-chip {
-    font-size: 10px;
-  }
-
-  .chip-platelets {
-    top: 5%;
-  }
-
-  .chip-crp {
-    bottom: 11%;
   }
 }

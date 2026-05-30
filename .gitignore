@@ -201,9 +201,9 @@ cython_debug/
 .abstra/
 
 # Visual Studio Code
-#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore
 #   that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#   and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#   and can be added to the global gitignore or merged into this file. However, if you prefer,
 #   you could uncomment the following to ignore the entire vscode folder
 # .vscode/
 # Temporary file for partial code execution
@@ -225,6 +225,32 @@ __marimo__/
 
 # Node / frontend
 node_modules/
+docs-site/.docusaurus/
+docs-site/build/
 frontend/dist/
 frontend/*.tsbuildinfo
 coverage/
+
+# Docs
+docs-site/.docusaurus/
+docs-site/build/
+docs-site/.serve.err
+docs-site/.serve.log
+
+# AI service
+ai-service/.venv/
+ai-service/venv/
+ai-service/env/
+ai-service/ENV/
+ai-service/env.bak/
+ai-service/venv.bak/
+ai-service/pytest-cache-files-*/
+ai-service/*.egg-info/
+
+# ML
+ml/notebooks/
+ml/data/
+ml/models/
+ml/logs/
+ml/tests/
+ml/tests/
